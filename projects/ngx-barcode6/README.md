@@ -21,7 +21,7 @@ This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode
 To use ngx-barcode6 in your project, install it via npm:
 
 ```bash
-$ npm install ngx-barcode6 jsbarcode --save
+npm install --save ngx-barcode6 jsbarcode
 ```
 
 ## Usage
@@ -75,7 +75,7 @@ Once the library is imported, you can use the ngx-barcode6 component in your Ang
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
 ```bash
-$ npm run build ngx-barcode6
+npm run build ngx-barcode6
 ```
 
 ## License
