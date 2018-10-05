@@ -1,27 +1,74 @@
-# Barcode
+# ngx-barcode6
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+A barcode component for Angular 6.
 
-## Development server
+An angular component for Angular 6 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- supports all barcode formats provided by JsBarcode
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  - CODE128
+  - EAN
+  - CODE39
+  - ITF-14
+  - MSI
+  - Pharmacode
+  - Codabar
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+To use ngx-barcode6 in your project, install it via npm:
 
-## Running unit tests
+```bash
+$ npm install ngx-barcode6 --save
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+Import the NgxBarcode6Module into your desired module:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-## Further help
+import { AppComponent } from './app.component';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+// Import ngx-barcode module
+import { NgxBarcode6Module } from 'ngx-barcode6';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgxBarcode6Module
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+Once the library is imported, you can use the ngx-barcode component in your Angular application:
+
+```xml
+<!-- Adding a barcode in app.component.html -->
+<h1>
+  {{title}}
+</h1>
+<ngx-barcode [bc-value]="value" [bc-display-value]="true"></ngx-barcode>
+```
+
+## Development
+
+To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
+
+```bash
+$ npm run build ngx-barcode6
+```
+
+## License
+
+MIT © [Bryon Williams](mailto:bryon.williams@live.com)
