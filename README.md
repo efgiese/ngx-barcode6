@@ -71,4 +71,4 @@ $ npm run build ngx-barcode6
 
 ## License
 
-MIT © [Bryon Williams](mailto:bryon.williams@live.com)
+MIT © [Bryon Williams](mailto:bryon.williams@live.com), [Edgar Giese](mailto:edgar@egiese.de)
