@@ -1,8 +1,8 @@
 # ngx-barcode6
 
-A barcode component for Angular 6.
-
 An angular component for Angular 6 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+
+This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6.
 
 ## Features
 
