@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-barcode6": [
+        "dist/ngx-barcode6"
+      ],
+      "ngx-barcode6/*": [
+        "dist/ngx-barcode6/*"
+      ]
+    }
   }
 }

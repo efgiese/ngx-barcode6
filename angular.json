@@ -121,6 +121,41 @@
           }
         }
       }
+    },
+    "ngx-barcode6": {
+      "root": "projects/ngx-barcode6",
+      "sourceRoot": "projects/ngx-barcode6/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-barcode6/tsconfig.lib.json",
+            "project": "projects/ngx-barcode6/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-barcode6/src/test.ts",
+            "tsConfig": "projects/ngx-barcode6/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-barcode6/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-barcode6/tsconfig.lib.json",
+              "projects/ngx-barcode6/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "barcode"
