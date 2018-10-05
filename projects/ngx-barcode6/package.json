@@ -1,15 +1,12 @@
 {
   "name": "ngx-barcode6",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha3",
   "description": "An angular component for Angular 6 for creating 1-D barcodes based on Lindell's JsBarcode",
   "repository": {
     "type": "git",
-    "url": "https://github.com/efgiese/ngx-barcode6"
+    "url": "git+https://github.com/efgiese/ngx-barcode6.git"
   },
-  "author": {
-    "name": "Edgar Giese",
-    "email": "edgar@egiese.de"
-  },
+  "author": "Edgar Giese <edgar@egiese.de>",
   "keywords": [
     "angular",
     "barcode",
@@ -23,5 +20,10 @@
     "@angular/common": "^6.0.0",
     "@angular/core": "^6.0.0",
     "jsbarcode": "^3.11.0"
+  },
+  "homepage": "https://github.com/efgiese/ngx-barcode6#readme",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
