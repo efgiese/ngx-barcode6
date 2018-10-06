@@ -25,6 +25,20 @@ Supports all barcode formats provided by JsBarcode
 - Pharmacode
 - Codabar
 
+## Installation
+
+To use ngx-barcode6 in your project, install it via npm:
+
+```bash
+npm install --save ngx-barcode6 jsbarcode
+```
+
+To run this Project, you should install the dependencies (jsbarcode) via npm manually:
+
+```bash
+npm install --save jsbarcode
+```
+
 ## Usage
 
 Import the NgxBarcode6Module into your desired module:
