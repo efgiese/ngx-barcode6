@@ -1,11 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+
+
+import { NgxBarcode6Module } from 'projects/ngx-barcode6/src/lib/ngx-barcode6/ngx-barcode6.module';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
       ],
+      imports: [
+        NgxBarcode6Module
+      ]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
