@@ -93,6 +93,20 @@ To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 npm run build ngx-barcode6
 ```
 
+## Test
+
+To test the demo:
+
+```bash
+ng test
+```
+
+To test the ngx-barcode6:
+
+```bash
+ng test ngx-barcode6
+```
+
 ## License
 
 MIT © [Bryon Williams](mailto:bryon.williams@live.com), [Edgar Giese](mailto:edgar@egiese.de)
