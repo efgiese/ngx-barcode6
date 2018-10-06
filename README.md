@@ -4,25 +4,26 @@ An angular component for Angular 6 for creating 1-D barcodes based on [Lindell's
 
 This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6.
 
-## Features
+## Supported barcodes
 
-- supports all barcode formats provided by JsBarcode
+Supports all barcode formats provided by JsBarcode
 
-  - CODE128
-  - EAN
-  - CODE39
-  - ITF-14
-  - MSI
-  - Pharmacode
-  - Codabar
-
-## Installation
-
-To use ngx-barcode6 in your project, install it via npm:
-
-```bash
-npm install --save ngx-barcode6 jsbarcode
-```
+- CODE128
+  - CODE128 (automatic mode switching)
+  - CODE128 A/B/C (force mode)
+- EAN
+  - EAN2
+  - EAN5
+  - EAN8
+- CODE39
+- ITF-14
+- MSI
+  - MSI10
+  - MSI11
+  - MSI1010
+  - MSI1110
+- Pharmacode
+- Codabar
 
 ## Usage
 
