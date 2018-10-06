@@ -1,4 +1,4 @@
-# ngx-barcode6
+# Demo Application for ngx-barcode6
 
 An angular component for Angular 6 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
 
