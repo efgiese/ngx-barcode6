@@ -15,7 +15,7 @@ export class NgxBarcode6Component implements OnChanges {
   @Input('bc-element-type') elementType: 'svg' | 'img' | 'canvas' = 'svg';
   @Input('bc-class') cssClass = 'barcode'; // this should be done more elegantly
 
-  @Input('bc-format') format: '' | 'CODE128' | 'CODE128A' | 'CODE128B' | 'CODE128C' | 'EAN' | 'UPC' | 'EAN8' | 'EAN5' |
+  @Input('bc-format') format: '' | 'CODE128' | 'CODE128A' | 'CODE128B' | 'CODE128C' | 'EAN13' | 'UPC' | 'EAN8' | 'EAN5' |
   'EAN2' | 'CODE39' | 'ITF14' | 'MSI' | 'MSI10' | 'MSI11' | 'MSI1010' | 'MSI1110' | 'pharmacode' | 'codabar' = 'CODE128';
   @Input('bc-line-color') lineColor = '#000000';
   @Input('bc-width') width = 2;
