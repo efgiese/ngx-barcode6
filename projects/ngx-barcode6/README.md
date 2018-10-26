@@ -6,15 +6,17 @@ This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode
 
 ## Supported barcodes
 
-Supports all barcode formats provided by JsBarcode
+Supports all barcode formats provided by [JsBarcode](https://github.com/lindell/JsBarcode/wiki)
 
 - CODE128
   - CODE128 (automatic mode switching)
   - CODE128 A/B/C (force mode)
-- EAN
-  - EAN2
-  - EAN5
+- EAN / UPC
+  - EAN13
+  - UPC
   - EAN8
+  - EAN5
+  - EAN2
 - CODE39
 - ITF-14
 - MSI
@@ -47,17 +49,12 @@ import { AppComponent } from './app.component';
 import { NgxBarcode6Module } from 'ngx-barcode6';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgxBarcode6Module
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxBarcode6Module],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 Once the library is imported, you can use the ngx-barcode6 component in your Angular application:
@@ -71,9 +68,9 @@ Once the library is imported, you can use the ngx-barcode6 component in your Ang
 </div>
 <div style="text-align:center">
   <ngx-barcode6
-    bc-format="CODE39"
-    bc-value="Angular 6+"
-    bc-display-value="true"
+    [bc-format]="'MSI'"
+    [bc-value]="'12345678901231'"
+    [bc-display-value]="true"
   >
   </ngx-barcode6>
 </div>
