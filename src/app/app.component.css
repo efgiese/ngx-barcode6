@@ -1,0 +1,13 @@
+select {
+  float: right;
+  width: 120px;
+}
+
+.selection {
+  height: 40px;;
+}
+
+.optionblock {
+  width: 300px;
+  margin-left: 40px;
+}
