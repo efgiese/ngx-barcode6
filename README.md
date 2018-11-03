@@ -4,6 +4,8 @@ An angular component for Angular 6 for creating 1-D barcodes based on [Lindell's
 
 This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6.
 
+Published on [npm](https://www.npmjs.com/package/ngx-barcode6).
+
 ## Supported barcodes
 
 Supports all barcode formats provided by [JsBarcode](https://github.com/lindell/JsBarcode/wiki)
