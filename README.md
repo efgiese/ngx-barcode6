@@ -1,6 +1,6 @@
 # Demo Application for ngx-barcode6
 
-An angular component for Angular 6+ for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+An angular component for Angular 6/7 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
 
 This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6.
 
@@ -90,6 +90,13 @@ To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
 ```bash
 npm run build ngx-barcode6
+```
+
+To deploy ngx-barcode6:
+
+```bash
+cd dist/ngx-barcode6
+npm publish
 ```
 
 ## Test
