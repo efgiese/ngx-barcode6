@@ -34,7 +34,7 @@ Supports all barcode formats provided by [JsBarcode](https://github.com/lindell/
 To use ngx-barcode6 in your project, install it via npm:
 
 ```bash
-npm install --save ngx-barcode6 jsbarcode
+npm install --save ngx-barcode6 jsbarcode@3.11.0
 ```
 
 To run this Project, you should install the dependencies (jsbarcode) via npm manually:
