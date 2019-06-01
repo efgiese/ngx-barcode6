@@ -1,6 +1,6 @@
 {
   "name": "barcode",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An angular component for Angular 6 for creating 1-D barcodes based on Lindell's JsBarcode",
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
     "Angular",
     "Angular6",
     "Angular7",
+    "Angular8",
     "barcode",
     "jsbarcode"
   ],
@@ -54,6 +55,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "fstream": "^1.0.12",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
