@@ -1,5 +1,8 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+
+import { NgxBarcode6Module } from 'ngx-barcode6';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -7,6 +10,10 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [
+        FormsModule,
+        NgxBarcode6Module
+      ]
     }).compileComponents();
   }));
 
