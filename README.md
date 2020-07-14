@@ -89,7 +89,7 @@ Once the library is imported, you can use the ngx-barcode6 component in your Ang
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
 ```bash
-npm run build ngx-barcode6
+npm run build ngx-barcode6 --prod
 ```
 
 To deploy ngx-barcode6:
