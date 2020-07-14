@@ -22,8 +22,8 @@
     "url": "https://github.com/efgiese/ngx-barcode6/issues"
   },
   "peerDependencies": {
-    "@angular/common": ">=6.0.0 <= 10.0.0",
-    "@angular/core": ">=6.0.0 <= 10.0.0",
+    "@angular/common": ">=6.0.0 <10.1.0",
+    "@angular/core": ">=6.0.0 <10.1.0",
     "jsbarcode": "^3.11.0"
   },
   "dependencies": {
