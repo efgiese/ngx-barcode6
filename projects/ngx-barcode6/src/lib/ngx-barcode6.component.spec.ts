@@ -59,12 +59,12 @@ describe('NgxBarcode6Component inside a test host', () => {
   let containerEl: HTMLElement;
   let barcodeEl: HTMLElement;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ NgxBarcode6Component, TestNgxBarcode6Component ]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TestNgxBarcode6Component);
