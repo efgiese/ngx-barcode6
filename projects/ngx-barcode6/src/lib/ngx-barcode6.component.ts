@@ -38,7 +38,7 @@
     @Input('bc-valid') valid: () => boolean = () => true;
 
 
-    get options() {
+    get options(): any {
       return {
         format: this.format,
         lineColor: this.lineColor,
@@ -62,11 +62,11 @@
     }
     constructor(private renderer: Renderer2) { }
 
-    ngOnChanges() {
+    ngOnChanges(): void {
       this.createBarcode();
     }
 
-    createBarcode() {
+    createBarcode(): void {
       if (!this.value) { return; }
       let element: Element;
       switch (this.elementType) {

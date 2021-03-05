@@ -1,4 +1,4 @@
-import { TestBed, ComponentFixture, tick, fakeAsync, async } from '@angular/core/testing';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
@@ -59,12 +59,12 @@ describe('NgxBarcode6Component inside a test host', () => {
   let containerEl: HTMLElement;
   let barcodeEl: HTMLElement;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [ NgxBarcode6Component, TestNgxBarcode6Component ]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TestNgxBarcode6Component);
