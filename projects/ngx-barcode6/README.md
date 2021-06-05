@@ -1,6 +1,6 @@
 # ngx-barcode6
 
-An angular component for Angular 6 - 11 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+An angular component for Angular 9 - 11 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
 
 This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6 works on Angular 11.x.
 
@@ -32,7 +32,13 @@ Supports all barcode formats provided by [JsBarcode](https://github.com/lindell/
 To use ngx-barcode6 in your project, install it via npm:
 
 ```bash
-npm install --save ngx-barcode6 jsbarcode@3.11.0
+npm install --save ngx-barcode6 jsbarcode@3.11.4
+```
+
+For Angular 8 use `ngx-barcode6@1.0.10`.
+
+```bash
+npm install --save ngx-barcode6@1.0.10 jsbarcode@3.11.4
 ```
 
 ## Usage
