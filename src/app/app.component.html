@@ -1,34 +1,38 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div style="text-align: center">
+  <h1>Welcome to {{ title }}!</h1>
 </div>
 
 <div class="optionblock">
   <div class="selection">
-    <label for="barcode">Barcodeformat:
+    <label for="barcode"
+      >Barcodeformat:
       <select name="barcode" id="barcode" [(ngModel)]="selectedBarcodeObj">
-        <option [ngValue]="i" *ngFor="let i of barcodeObjs">{{i.name}}</option>
+        <option [ngValue]="i" *ngFor="let i of barcodeObjs">
+          {{ i.name }}
+        </option>
       </select>
     </label>
   </div>
   <div class="selection">
-    <label for="width">Linewidth:
+    <label for="width"
+      >Linewidth:
       <select name="width" id="width" [(ngModel)]="selectedWidth">
         <option [ngValue]="j" *ngFor="let j of widths">{{ j }}</option>
       </select>
     </label>
   </div>
   <div class="selection">
-    <label for="heigth">Heigth:
+    <label for="heigth"
+      >Heigth:
       <select name="heigth" id="heigth" [(ngModel)]="selectedHeight">
         <option [ngValue]="i" *ngFor="let i of heights">{{ i }}</option>
       </select>
     </label>
   </div>
   <div class="selection">
-    <label for="fontSize">Fontsize:
+    <label for="fontSize"
+      >Fontsize:
       <select name="fontSize" id="fontSize" [(ngModel)]="selectedFontSize">
         <option [ngValue]="i" *ngFor="let i of fontSizes">{{ i }}</option>
       </select>
@@ -36,12 +40,18 @@
   </div>
 </div>
 
-<div style="text-align:center">
-  <ngx-barcode6 [bc-format]="selectedBarcodeObj.value" [bc-width]="selectedWidth" [bc-height]="selectedHeight"
-    [bc-font-size]="selectedFontSize" [bc-value]="selectedBarcodeObj.example" [bc-display-value]="true">
+<div style="text-align: center">
+  <ngx-barcode6
+    [bc-format]="selectedBarcodeObj.value"
+    [bc-width]="selectedWidth"
+    [bc-height]="selectedHeight"
+    [bc-font-size]="selectedFontSize"
+    [bc-value]="selectedBarcodeObj.example"
+    [bc-display-value]="true"
+  >
   </ngx-barcode6>
 </div>
 
-<div style="text-align:center">
-  {{selectedBarcodeObj | json}}
+<div style="text-align: center">
+  {{ selectedBarcodeObj | json }}
 </div>
