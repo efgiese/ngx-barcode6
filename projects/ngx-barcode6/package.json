@@ -1,6 +1,6 @@
 {
   "name": "ngx-barcode6",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "An angular component for Angular 9 - 12 for creating 1-D barcodes based on Lindell's JsBarcode",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
     "Angular9",
     "Angular10",
     "Angular11",
+    "Angular12",
     "barcode",
     "jsbarcode"
   ],
