@@ -1,4 +1,4 @@
-  // tslint:disable:no-input-rename component-selector
+  /* eslint-disable @angular-eslint/no-input-rename, @angular-eslint/component-selector */
   import { Component, Input, OnChanges, ViewChild, Renderer2, ElementRef } from '@angular/core';
 
   declare var require: any;
