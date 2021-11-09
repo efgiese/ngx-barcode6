@@ -13,12 +13,6 @@
       "es2018"
     ]
   },
-  "angularCompilerOptions": {
-    "skipTemplateCodegen": true,
-    "strictMetadataEmit": true,
-    "enableResourceInlining": true,
-    "enableIvy": false
-  },
   "exclude": [
     "src/test.ts",
     "**/*.spec.ts"
