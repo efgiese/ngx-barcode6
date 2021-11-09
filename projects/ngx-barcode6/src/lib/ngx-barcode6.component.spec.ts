@@ -1,4 +1,4 @@
-import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
@@ -8,18 +8,20 @@ describe('NgxBarcode6Component', () => {
   let barcode6: NgxBarcode6Component;
   let fixture: ComponentFixture<NgxBarcode6Component>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ NgxBarcode6Component ],
       imports: [
         FormsModule
-      ],
-      declarations: [
-        NgxBarcode6Component
       ]
-    }).compileComponents();
+    })
+    .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(NgxBarcode6Component);
     barcode6 = fixture.componentInstance;
+    fixture.detectChanges();
   });
 
   it('should create', () => {
@@ -34,7 +36,6 @@ describe('NgxBarcode6Component', () => {
   });
 });
 
-
 import { Component } from '@angular/core';
 
 @Component({
@@ -48,7 +49,7 @@ import { Component } from '@angular/core';
 })
 class TestNgxBarcode6Component {
   code = 'CODE128';
-  value: string;
+  value: string = '';
   display = true;
   elementType = 'svg';
 }
