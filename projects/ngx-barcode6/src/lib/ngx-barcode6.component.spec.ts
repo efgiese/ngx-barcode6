@@ -10,12 +10,12 @@ describe('NgxBarcode6Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxBarcode6Component ],
+      declarations: [NgxBarcode6Component],
       imports: [
         FormsModule
       ]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -49,7 +49,7 @@ import { Component } from '@angular/core';
 })
 class TestNgxBarcode6Component {
   code = 'CODE128';
-  value: string = '';
+  value = '';
   display = true;
   elementType = 'svg';
 }
@@ -62,9 +62,9 @@ describe('NgxBarcode6Component inside a test host', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxBarcode6Component, TestNgxBarcode6Component ]
+      declarations: [NgxBarcode6Component, TestNgxBarcode6Component]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -81,7 +81,7 @@ describe('NgxBarcode6Component inside a test host', () => {
 
   it('should be no barcode with no value', () => {
     testHost.code = 'CODE128';
-    testHost.value = null;
+    testHost.value = '';
     fixture.detectChanges();
 
     barcodeEl = fixture.nativeElement.querySelector('svg');
@@ -258,7 +258,9 @@ describe('NgxBarcode6Component inside a test host', () => {
 
     barcodeEl = fixture.nativeElement.querySelector('svg');
     expect(barcodeEl.childNodes.length).toBeGreaterThan(0);
-    expect(barcodeEl.children[1].lastChild.textContent).toEqual('12344');
+    if (barcodeEl.children[1].lastChild !== null) {
+      expect(barcodeEl.children[1].lastChild.textContent).toEqual('12344');
+    }
   });
 
   it('should encode numbers with 0-9 digits on MSI11', () => {
@@ -268,7 +270,9 @@ describe('NgxBarcode6Component inside a test host', () => {
 
     barcodeEl = fixture.nativeElement.querySelector('svg');
     expect(barcodeEl.childNodes.length).toBeGreaterThan(0);
-    expect(barcodeEl.children[1].lastChild.textContent).toEqual('12343');
+    if (barcodeEl.children[1].lastChild !== null) {
+      expect(barcodeEl.children[1].lastChild.textContent).toEqual('12343');
+    }
   });
 
   it('should encode numbers with 0-9 digits on MSI1010', () => {
@@ -278,7 +282,9 @@ describe('NgxBarcode6Component inside a test host', () => {
 
     barcodeEl = fixture.nativeElement.querySelector('svg');
     expect(barcodeEl.childNodes.length).toBeGreaterThan(0);
-    expect(barcodeEl.children[1].lastChild.textContent).toEqual('123448');
+    if (barcodeEl.children[1].lastChild !== null) {
+      expect(barcodeEl.children[1].lastChild.textContent).toEqual('123448');
+    }
   });
 
   it('should encode numbers with 0-9 digits on MSI1110', () => {
@@ -288,7 +294,9 @@ describe('NgxBarcode6Component inside a test host', () => {
 
     barcodeEl = fixture.nativeElement.querySelector('svg');
     expect(barcodeEl.childNodes.length).toBeGreaterThan(0);
-    expect(barcodeEl.children[1].lastChild.textContent).toEqual('123430');
+    if (barcodeEl.children[1].lastChild !== null) {
+      expect(barcodeEl.children[1].lastChild.textContent).toEqual('123430');
+    }
   });
 
   it('should encode numbers 3 to 131070 on pharmacode', () => {
