@@ -18,7 +18,9 @@ Supports all barcode formats provided by [JsBarcode](https://github.com/lindell/
   - EAN5
   - EAN2
 - CODE39
-- ITF-14
+- ITF
+  - ITF
+  - ITF-14
 - MSI
   - MSI10
   - MSI11
@@ -32,13 +34,13 @@ Supports all barcode formats provided by [JsBarcode](https://github.com/lindell/
 To use ngx-barcode6 in your project, install it via npm:
 
 ```bash
-npm install --save ngx-barcode6 jsbarcode@3.11.4
+npm install --save ngx-barcode6 jsbarcode@3.11.5
 ```
 
 For Angular 8 use `ngx-barcode6@1.0.10`.
 
 ```bash
-npm install --save ngx-barcode6@1.0.10 jsbarcode@3.11.4
+npm install --save ngx-barcode6@1.0.10 jsbarcode@3.11.5
 ```
 
 ## Usage
