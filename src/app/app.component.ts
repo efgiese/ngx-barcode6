@@ -17,6 +17,7 @@ export class AppComponent {
     { name: 'EAN-5', value: 'EAN5', example: '54495' },
     { name: 'EAN-2', value: 'EAN2', example: '53' },
     { name: 'Code39', value: 'CODE39', example: 'CODE39 Barcode' },
+    { name: 'ITF', value: 'ITF', example: '123456' },
     { name: 'ITF-14', value: 'ITF14', example: '12345678901231' },
     { name: 'MSI', value: 'MSI', example: '1234567890' },
     { name: 'MSI10', value: 'MSI10', example: '1234' },
