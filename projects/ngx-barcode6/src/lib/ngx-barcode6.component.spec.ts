@@ -232,6 +232,15 @@ describe('NgxBarcode6Component inside a test host', () => {
     expect(barcodeEl.childNodes.length).toBeGreaterThan(0);
   });
 
+  it('should encode even number of digits to ITF', () => {
+    testHost.code = 'ITF';
+    testHost.value = '123456';
+    fixture.detectChanges();
+
+    barcodeEl = fixture.nativeElement.querySelector('svg');
+    expect(barcodeEl.childNodes.length).toBeGreaterThan(0);
+  });
+
   it('should encode numbers with 14 digits on ITF-14 (Interleaved Two of Five)', () => {
     testHost.code = 'ITF14';
     testHost.value = '12345678901231';

@@ -18,7 +18,9 @@ Supports all barcode formats provided by [JsBarcode](https://github.com/lindell/
   - EAN5
   - EAN2
 - CODE39
-- ITF-14
+- ITF
+  - ITF
+  - ITF-14
 - MSI
   - MSI10
   - MSI11
