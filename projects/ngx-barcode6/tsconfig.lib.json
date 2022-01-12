@@ -7,6 +7,7 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
+    "esModuleInterop": true,
     "types": [],
     "lib": [
       "dom",
@@ -14,10 +15,10 @@
     ]
   },
   "angularCompilerOptions": {
+    "compilationMode": "partial",
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
-    "enableResourceInlining": true,
-    "enableIvy": false
+    "enableResourceInlining": true
   },
   "exclude": [
     "src/test.ts",
