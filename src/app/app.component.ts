@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   barcodeObjs = [
     { name: 'Code 128', value: 'CODE128', example: 'Example_128_1234567890' },
     { name: 'Code 128A', value: 'CODE128A', example: 'EXAMPLE128A' },
@@ -37,4 +38,5 @@ export class AppComponent {
   selectedFontSize = this.fontSizes[3];
   title = 'ngx-barcode6';
   optionValue: any;
+
 }
