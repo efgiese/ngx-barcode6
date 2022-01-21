@@ -1,9 +1,6 @@
-/* eslint-disable @angular-eslint/no-input-rename, @angular-eslint/component-selector */
 import { Component, Input, OnChanges, ViewChild, Renderer2, ElementRef, AfterViewInit } from '@angular/core';
 
-declare var require: any;
-
-const jsbarcode = require('jsbarcode');
+import jsbarcode from 'jsbarcode';
 
 @Component({
   selector: 'ngx-barcode6',
