@@ -13,6 +13,7 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "ngx-barcode6": [
         "dist/ngx-barcode6/ngx-barcode6",
