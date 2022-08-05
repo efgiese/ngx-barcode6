@@ -1,7 +1,7 @@
 {
   "name": "ngx-barcode6",
-  "version": "1.0.20",
-  "description": "An angular component for Angular 9 - 13 for creating 1-D barcodes based on Lindell's JsBarcode",
+  "version": "1.0.21",
+  "description": "An angular component for Angular 9 - 14 for creating 1-D barcodes based on Lindell's JsBarcode",
   "homepage": "https://github.com/efgiese/ngx-barcode6#readme",
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
     "Angular11",
     "Angular12",
     "Angular13",
+    "Angular14",
     "barcode",
     "jsbarcode"
   ],
@@ -23,8 +24,8 @@
     "url": "https://github.com/efgiese/ngx-barcode6/issues"
   },
   "peerDependencies": {
-    "@angular/common": ">=9.0.0 <14.0.0",
-    "@angular/core": ">=9.0.0 <14.0.0",
+    "@angular/common": ">=9.0.0 <=14.x",
+    "@angular/core": ">=9.0.0 <=14.x",
     "jsbarcode": "^3.11.5"
   },
   "dependencies": {
