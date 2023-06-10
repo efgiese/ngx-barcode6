@@ -1,6 +1,6 @@
 {
   "name": "barcode",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "An angular component for Angular 9 - 16 for creating 1-D barcodes based on Lindell's JsBarcode",
   "repository": {
     "type": "git",

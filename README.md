@@ -1,8 +1,8 @@
 # Demo Application for ngx-barcode6
 
-An angular component for Angular 9 - 15 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+An angular component for Angular 9 - 16 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
 
-This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6 works on Angular 15.x.
+This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6 works on Angular 16.x.
 
 Published on [npm](https://www.npmjs.com/package/ngx-barcode6).
 
@@ -46,6 +46,8 @@ npm install --save ngx-barcode6@1.0.10 jsbarcode@3.11.5
 ```
 
 For Angular 10 try `ngx-barcode6@1.0.12`.
+
+Because of Angular 16 and Nodejs 18 i think you can not use this actual version for lower than Angular 14.
 
 For this Project, i installed the dependencies (jsbarcode) via npm manually:
 
