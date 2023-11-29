@@ -1,7 +1,7 @@
 {
   "name": "barcode",
   "version": "1.0.23",
-  "description": "An angular component for Angular 9 - 16 for creating 1-D barcodes based on Lindell's JsBarcode",
+  "description": "An angular component for Angular 9 - 17 for creating 1-D barcodes based on Lindell's JsBarcode",
   "repository": {
     "type": "git",
     "url": "https://github.com/efgiese/ngx-barcode6"
@@ -15,6 +15,7 @@
     "Angular14",
     "Angular15",
     "Angular16",
+    "Angular17",
     "barcode",
     "jsbarcode"
   ],
@@ -31,31 +32,31 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^16.0.0",
-    "@angular/common": "^16.0.0",
-    "@angular/compiler": "^16.0.0",
-    "@angular/core": "^16.0.0",
-    "@angular/forms": "^16.0.0",
-    "@angular/platform-browser": "^16.0.0",
-    "@angular/platform-browser-dynamic": "^16.0.0",
-    "@angular/router": "^16.0.0",
+    "@angular/animations": "^17.0.4",
+    "@angular/common": "^17.0.4",
+    "@angular/compiler": "^17.0.4",
+    "@angular/core": "^17.0.4",
+    "@angular/forms": "^17.0.4",
+    "@angular/platform-browser": "^17.0.4",
+    "@angular/platform-browser-dynamic": "^17.0.4",
+    "@angular/router": "^17.0.4",
     "jsbarcode": "^3.11.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.5.3",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.0.5",
-    "@angular/cli": "~16.0.5",
-    "@angular/compiler-cli": "^16.0.0",
+    "@angular-devkit/build-angular": "~17.0.1",
+    "@angular/cli": "~17.0.1",
+    "@angular/compiler-cli": "~17.0.3",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "ng-packagr": "^16.0.0",
-    "typescript": "~5.0.2"
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^17.0.2",
+    "typescript": "~5.2.2"
   }
 }
