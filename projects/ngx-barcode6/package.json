@@ -23,7 +23,7 @@
   },
   "peerDependencies": {
     "@angular/common": ">=14.0.0",
-    "@angular/core": ">=14.0.0 <17.0.4",
+    "@angular/core": ">=14.0.0",
     "jsbarcode": "^3.11.5"
   },
   "dependencies": {
