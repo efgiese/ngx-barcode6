@@ -1,8 +1,8 @@
 # Demo Application for ngx-barcode6
 
-An angular component for Angular 9 - 17 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+An angular component for Angular 9 - 18 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
 
-This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6 works on Angular 17.x.
+This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6 works on Angular 18.x.
 
 Published on [npm](https://www.npmjs.com/package/ngx-barcode6).
 
@@ -81,7 +81,7 @@ If you prefer the Standalone Components then do it like this:
 
 ```typescript
 import { Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -90,7 +90,7 @@ import { NgxBarcode6Module } from 'ngx-barcode6';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [BrowserModule, FormsModule, RouterOutlet, NgxBarcode6Module],
+  imports: [CommonModule, FormsModule, RouterOutlet, NgxBarcode6Module],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
