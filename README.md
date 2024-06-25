@@ -125,6 +125,7 @@ To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 ```bash
 npm run build ngx-barcode6 --omit=dev
 ```
+
 To test the deploy:
 
 ```bash
