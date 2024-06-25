@@ -1,16 +1,26 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+import { NgxBarcode6Module } from 'ngx-barcode6';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterOutlet, NgxBarcode6Module],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
   barcodeObjs = [
     { name: 'Code 128', value: 'CODE128', example: 'Example_128_1234567890' },
     { name: 'Code 128A', value: 'CODE128A', example: 'EXAMPLE128A' },
-    { name: 'Code 128B', value: 'CODE128B', example: 'Example_128B_1234567890' },
+    {
+      name: 'Code 128B',
+      value: 'CODE128B',
+      example: 'Example_128B_1234567890',
+    },
     { name: 'Code 128C', value: 'CODE128C', example: '1234567890' },
     { name: 'EAN-13', value: 'EAN13', example: '1234567890128' },
     { name: 'UPC', value: 'UPC', example: '123456789999' },
@@ -26,7 +36,7 @@ export class AppComponent {
     { name: 'MSI1010', value: 'MSI1010', example: '1234' },
     { name: 'MSI1110', value: 'MSI1110', example: '1234' },
     { name: 'pharmacode', value: 'pharmacode', example: '123456' },
-    { name: 'codabar', value: 'codabar', example: '1234567890' }
+    { name: 'codabar', value: 'codabar', example: '1234567890' },
   ];
 
   widths = [1, 2, 3, 4];
@@ -38,5 +48,4 @@ export class AppComponent {
   selectedFontSize = this.fontSizes[3];
   title = 'ngx-barcode6';
   optionValue: any;
-
 }
