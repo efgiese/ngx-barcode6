@@ -69,6 +69,28 @@ import { NgxBarcode6Module } from 'ngx-barcode6';
 export class AppModule {}
 ```
 
+If you prefer the Standalone Components then do it like this:
+
+```typescript
+import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+import { NgxBarcode6Module } from 'ngx-barcode6';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [BrowserModule, FormsModule, RouterOutlet, NgxBarcode6Module],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  ...
+}
+```
+
 Once the library is imported, you can use the ngx-barcode6 component in your Angular application:
 
 ```xml
