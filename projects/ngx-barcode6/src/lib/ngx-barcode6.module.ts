@@ -5,9 +5,9 @@ import { NgxBarcode6Component } from './ngx-barcode6.component';
 
 @NgModule({
   declarations: [
-    NgxBarcode6Component
   ],
   imports: [
+    NgxBarcode6Component
   ],
   exports: [
     NgxBarcode6Component

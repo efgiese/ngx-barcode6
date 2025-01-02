@@ -39,6 +39,7 @@ describe('NgxBarcode6Component', () => {
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: false,
   template: `
   <ngx-barcode6
     [bc-format]="code"
