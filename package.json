@@ -1,7 +1,7 @@
 {
   "name": "barcode",
-  "version": "1.0.25",
-  "description": "An angular component for Angular 9 - 17 for creating 1-D barcodes based on Lindell's JsBarcode",
+  "version": "1.0.26",
+  "description": "An angular component for Angular 9 - 19 for creating 1-D barcodes based on Lindell's JsBarcode",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/efgiese/ngx-barcode6.git"
@@ -16,6 +16,7 @@
     "Angular16",
     "Angular17",
     "Angular18",
+    "Angular19",
     "barcode",
     "jsbarcode"
   ],
@@ -23,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/efgiese/ngx-barcode6/issues"
   },
-  "scripts": {
+    "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -32,31 +33,31 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^18.0.4",
-    "@angular/common": "^18.0.4",
-    "@angular/compiler": "^18.0.4",
-    "@angular/core": "^18.0.4",
-    "@angular/forms": "^18.0.4",
-    "@angular/platform-browser": "^18.0.4",
-    "@angular/platform-browser-dynamic": "^18.0.4",
-    "@angular/router": "^18.0.4",
+    "@angular/animations": "^19.0.0",
+    "@angular/common": "^19.0.0",
+    "@angular/compiler": "^19.0.0",
+    "@angular/core": "^19.0.0",
+    "@angular/forms": "^19.0.0",
+    "@angular/platform-browser": "^19.0.0",
+    "@angular/platform-browser-dynamic": "^19.0.0",
+    "@angular/router": "^19.0.0",
     "jsbarcode": "^3.11.6",
     "rxjs": "~7.8.0",
-    "tslib": "^2.5.3",
-    "zone.js": "~0.14.3"
+    "tslib": "^2.8.1",
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.0.5",
-    "@angular/cli": "^18.0.5",
-    "@angular/compiler-cli": "^18.0.4",
+    "@angular-devkit/build-angular": "^19.0.6",
+    "@angular/cli": "^19.0.6",
+    "@angular/compiler-cli": "^19.0.0",
     "@types/jasmine": "~5.1.0",
-    "jasmine-core": "~5.1.0",
+    "jasmine-core": "~5.4.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "ng-packagr": "^18.0.0",
-    "typescript": "~5.4.5"
+    "ng-packagr": "^19.0.0",
+    "typescript": "~5.6.2"
   }
 }

@@ -8,9 +8,9 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
       ],
       imports: [
+        AppComponent,
         FormsModule,
         NgxBarcode6Module
       ]

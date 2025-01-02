@@ -3,6 +3,7 @@ import { Component, Input, OnChanges, ViewChild, Renderer2, ElementRef, AfterVie
 import jsbarcode from 'jsbarcode';
 
 @Component({
+  standalone: false,
   selector: 'ngx-barcode6',
   template: `<div #bcElement [class]="cssClass"></div>`,
   styles: []

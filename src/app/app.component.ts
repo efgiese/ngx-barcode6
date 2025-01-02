@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { NgxBarcode6Module } from 'ngx-barcode6';
@@ -8,7 +7,7 @@ import { NgxBarcode6Module } from 'ngx-barcode6';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterOutlet, NgxBarcode6Module],
+  imports: [CommonModule, FormsModule, NgxBarcode6Module],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
