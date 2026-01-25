@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-import { NgxBarcode6Module } from 'ngx-barcode6';
+import { NgxBarcode6 } from 'ngx-barcode6';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, NgxBarcode6Module],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  imports: [CommonModule, FormsModule, NgxBarcode6],
+  templateUrl: './app.html',
+  styleUrls: ['./app.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
+export class App {
   barcodeObjs = [
     { name: 'Code 128', value: 'CODE128', example: 'Example_128_1234567890' },
     { name: 'Code 128A', value: 'CODE128A', example: 'EXAMPLE128A' },
@@ -41,10 +41,10 @@ export class AppComponent {
   widths = [1, 2, 3, 4];
   heights = [40, 50, 60, 70, 80, 90, 100];
   fontSizes = [10, 12, 14, 16, 18, 20, 22, 24];
-  selectedBarcodeObj = this.barcodeObjs[0];
-  selectedWidth = this.widths[1];
-  selectedHeight = this.heights[3];
-  selectedFontSize = this.fontSizes[3];
+  selectedBarcodeObj = signal(this.barcodeObjs[0]);
+  selectedWidth = signal(this.widths[1]);
+  selectedHeight = signal(this.heights[3]);
+  selectedFontSize = signal(this.fontSizes[3]);
   title = 'ngx-barcode6';
   optionValue: any;
 }
