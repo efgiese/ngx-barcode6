@@ -5,7 +5,6 @@ import { NgxBarcode6 } from 'ngx-barcode6';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [CommonModule, FormsModule, NgxBarcode6],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
