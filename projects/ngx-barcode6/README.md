@@ -1,8 +1,8 @@
 # ngx-barcode6
 
-An angular component for Angular 17 - 20 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
+An angular component for Angular 17 - 21 for creating 1-D barcodes based on [Lindell's JsBarcode](https://github.com/lindell/JsBarcode).
 
-This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6 works on Angular 20.x.
+This is forked from [yobryon/ngx-barcode](https://github.com/yobryon/ngx-barcode) and upgraded to Angular 6 works on Angular 21.x.
 
 ## Supported barcodes
 
@@ -51,44 +51,22 @@ From now on, I'm changing the release naming. The second digit in the version in
 
 ## Usage
 
-Import the NgxBarcode6Module into your desired module:
+Since Angular 19 standalone: true is standard:
 
 ```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
-// Import ngx-barcode module
-import { NgxBarcode6Module } from 'ngx-barcode6';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, NgxBarcode6Module],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
-```
-
-If you prefer the Standalone Components then do it like this:
-
-```typescript
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-import { NgxBarcode6Module } from 'ngx-barcode6';
+import { NgxBarcode6 } from 'ngx-barcode6';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, FormsModule, RouterOutlet, NgxBarcode6Module],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  imports: [CommonModule, FormsModule, NgxBarcode6],
+  templateUrl: './app.html',
+  styleUrls: ['./app.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
+export class App {
   ...
 }
 ```
@@ -96,16 +74,13 @@ export class AppComponent {
 Once the library is imported, you can use the ngx-barcode6 component in your Angular application:
 
 ```xml
-<!-- Adding a barcode in app.component.html -->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<div style="text-align:center">
+<div style="text-align: center">
   <ngx-barcode6
-    [bc-format]="'MSI'"
-    [bc-value]="'12345678901231'"
+    [bc-format]="selectedBarcodeObj().value"
+    [bc-width]="selectedWidth()"
+    [bc-height]="selectedHeight()"
+    [bc-font-size]="selectedFontSize()"
+    [bc-value]="selectedBarcodeObj().example"
     [bc-display-value]="true"
   >
   </ngx-barcode6>

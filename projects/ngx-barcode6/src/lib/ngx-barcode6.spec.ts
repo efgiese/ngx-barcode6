@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
+import { NgxBarcode6 } from './ngx-barcode6';
 
-import { NgxBarcode6Component } from './ngx-barcode6.component';
-
-describe('NgxBarcode6Component', () => {
-  let barcode6: NgxBarcode6Component;
-  let fixture: ComponentFixture<NgxBarcode6Component>;
+describe('NgxBarcode6', () => {
+  let barcode6: NgxBarcode6;
+  let fixture: ComponentFixture<NgxBarcode6>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NgxBarcode6Component],
       imports: [
+        NgxBarcode6,
         FormsModule
       ]
     })
@@ -19,7 +18,7 @@ describe('NgxBarcode6Component', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxBarcode6Component);
+    fixture = TestBed.createComponent(NgxBarcode6);
     barcode6 = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -36,45 +35,47 @@ describe('NgxBarcode6Component', () => {
   });
 });
 
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  standalone: false,
+  imports: [NgxBarcode6],
   template: `
   <ngx-barcode6
     [bc-format]="code"
     [bc-value]="value"
     [bc-display-value]="display"
     [bc-element-type]="elementType">
-  </ngx-barcode6>`
+  </ngx-barcode6>`,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-class TestNgxBarcode6Component {
+class TestNgxBarcode6 {
   code = 'CODE128';
   value = '';
   display = true;
-  elementType = 'svg';
+  elementType: 'svg' | 'img' | 'canvas' = 'svg';
 }
 
-describe('NgxBarcode6Component inside a test host', () => {
-  let testHost: TestNgxBarcode6Component;
-  let fixture: ComponentFixture<TestNgxBarcode6Component>;
+describe('NgxBarcode6 inside a test host', () => {
+  let testHost: TestNgxBarcode6;
+  let fixture: ComponentFixture<TestNgxBarcode6>;
   let containerEl: HTMLElement;
   let barcodeEl: HTMLElement;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NgxBarcode6Component, TestNgxBarcode6Component]
+      imports: [TestNgxBarcode6]
     })
       .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TestNgxBarcode6Component);
+    fixture = TestBed.createComponent(TestNgxBarcode6);
     testHost = fixture.componentInstance;
-    fixture.detectChanges();
+    // Don't call detectChanges here - let each test control when it happens
   });
 
   it('should have the CSS-Class default value "barcode"', () => {
+    fixture.detectChanges();
     containerEl = fixture.nativeElement.querySelector('.barcode');
 
     expect(containerEl.className).toContain('barcode');
